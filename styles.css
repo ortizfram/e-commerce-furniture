@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Cinzel decorative', sans-serif;
 }
@@ -19,6 +23,10 @@ body {
     justify-content: center;
     z-index: 9;
     transition: .5s;
+}
+
+.navbar.bg{
+    background: #fff;
 }
 
 .links-container {
@@ -40,8 +48,15 @@ body {
     transition: .5s;
 }
 
+.navbar.bg .link {
+    color: #190c05;
+    opacity: 0.5;
+}
+
 .link.active,
-.link:hover {
+.link:hover,
+.navbar.bg .link:hover,
+.navbar.bg .link.active {
     opacity: 1;
 }
 
